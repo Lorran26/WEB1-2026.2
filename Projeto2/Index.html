@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formúlario</h1>
+    <form>
+        <fieldset>
+        <br><legend>Dados Pessoais</legend>
+        <label for="fname">Nome:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="fdate">Data de Nascimento:</label>
+        <input type="date" id="fdate" name="fdate"><br><br>
+        <label for="fname">Endereço:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="fname">Bairro:</label>
+        <input type="text" id="fname" name="fname"> 
+        <label for="fname">Cidade:</label> <input type="text" id="" name="fname"><br><br>
+        <label for="fname">CEP:</label>
+        <input type="text" id="fname" name="fname"> 
+        <label for="fname">Estado:</label> 
+        <select id="Estado" name="Estado">
+            <option value="Ceará">Ceará</option>
+            <option value="Piauí">Piauí</option>
+            <option value="Bahia">Bahia</option>
+        </select><br>
+        <br><label for="fname">Cor favorita:</label>
+        <input type="color" id="color" name="color"><br>
+        <label>Nível de Satisfação:</label>
+        <input type="range">
+        </fieldset>
+    </form>
+    <form>
+        <br><fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="fname">Natureza do Cargo:</label><br>
+            <input type="radio" id="html" name="Cargo" value="Gerencia">
+            <label for="html">Gerencia</label> 
+            <input type="radio" id="html" name="Cargo" value="Financeiro">
+            <label for="html">Financeiro</label> 
+            <input type="radio" id="html" name="Cargo" value="Recepção">
+            <label for="html">Recepção</label> 
+            <input type="radio" id="html" name="Cargo" value="Administrativo">
+            <label for="html">Administrativo</label> 
+            <input type="radio" id="html" name="Cargo" value="RH">
+            <label for="html">RH</label> <br><br>
+
+            <label for="fname">Área de Interesse:</label><br>
+            <input type="radio" id="select" name="Interesse" value="Computação">
+            <label for="fname">Computação</label> 
+            <input type="radio" id="select" name="Interesse" value="Química"> 
+            <label for="fname">Química</label> 
+            <input type="radio" id="select" name="Interesse" value="Farmácia">
+            <label for="html">Farmácia</label><br>
+            <p><label for="html">Mini Currículo:</label></p>
+            <textarea id="HTML" name="text" rows="4" cols="50"></textarea>
+  <br> 
+        </fieldset>
+    </form>
+    <br><input type="submit" value="Enviar"><br>
+</body>
+</html>
