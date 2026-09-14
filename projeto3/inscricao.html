@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incrição</title>
+</head>
+<body>
+    <h1>Inscrição</h1>
+    <a href="index.html">Tech Challenge</a>|<a href="programacao.html">Programação</a>|<a href="Atividades.html">Atividades</a>|<a href="inscricao.html">Inscrição</a>|<a href="InfImportantes.html">Informações Importantes</a>|<a href="TermoParticipacao.html">Termo de Participação</a>
+    <hr>
+    
+    <form action="#">
+                <fieldset>
+
+                    <legend>Dados pessoais</legend>
+
+                    <p>
+                        <label for="nome">Nome completo:</label><br>
+                        <input type="text" id="nome" name="nome" required>
+                    </p>
+
+                    <p>
+                        <label for="nascimento">Data de nascimento:</label><br>
+                        <input type="date" id="nascimento" name="nascimento" required>
+                    </p>
+
+                    <p>
+                        <label for="cpf">CPF:</label><br>
+                        <input type="text" id="cpf" name="cpf" inputmode="numeric" pattern="[0-9]{11}" placeholder="Somente números" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="telefone">Telefone:</label><br>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </p>
+
+                    <p>
+                        <label for="senha">Senha:</label><br>
+                        <input type="password" id="senha" name="senha" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <p>
+                        <label for="cep">CEP:</label><br>
+                        <input type="text" id="cep" name="cep" inputmode="numeric" pattern="[0-9]{8}" required>
+                    </p>
+
+                    <p>
+                        <label for="rua">Rua:</label><br>
+                        <input type="text" id="rua" name="rua" required>
+                    </p>
+
+                    <p>
+                        <label for="numero">Número:</label><br>
+                        <input type="number" id="numero" name="numero" min="1" required>
+                    </p>
+
+                    <p>
+                        <label for="complemento">Complemento:</label><br>
+                        <input type="text" id="complemento" name="complemento">
+                    </p>
+
+                    <p>
+                        <label for="bairro">Bairro:</label><br>
+                        <input type="text" id="bairro" name="bairro" required>
+                    </p>
+
+                    <p>
+                        <label for="cidade">Cidade:</label><br>
+                        <input type="text" id="cidade" name="cidade" required>
+                    </p>
+
+                    <p>
+                        <label for="estado">Estado:</label><br>
+                        <select id="estado" name="estado" required>
+                            <option value="">Selecione</option>
+                            <option value="CE">Ceará</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="BA">Bahia</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Perfil do participante</legend>
+
+                    <p>Qual é a sua situação?</p>
+                    <input type="radio" id="estudante" name="situacao" value="estudante" required>
+                    <label for="estudante">Estudante</label><br>
+
+                    <input type="radio" id="professor" name="situacao" value="professor">
+                    <label for="professor">Professor</label><br>
+
+                    <input type="radio" id="profissional" name="situacao" value="profissional">
+                    <label for="profissional">Profissional da área</label><br>
+
+                    <input type="radio" id="outro" name="situacao" value="outro">
+                    <label for="outro">Outro</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Áreas de interesse</legend>
+
+                    <input type="checkbox" id="ia" name="interesses" value="ia">
+                    <label for="ia">Inteligência Artificial</label><br>
+
+                    <input type="checkbox" id="web" name="interesses" value="web">
+                    <label for="web">Desenvolvimento Web</label><br>
+
+                    <input type="checkbox" id="redes" name="interesses" value="redes">
+                    <label for="redes">Redes</label><br>
+
+                    <input type="checkbox" id="seguranca" name="interesses" value="seguranca">
+                    <label for="seguranca">Segurança</label><br>
+
+                    <input type="checkbox" id="bd" name="interesses" value="bd">
+                    <label for="bd">Banco de Dados</label><br>
+
+                    <input type="checkbox" id="cg" name="interesses" value="computacao-grafica">
+                    <label for="cg">Computação Gráfica</label><br>
+
+                    <input type="checkbox" id="programa" name="interesses" value="programacao">
+                    <label for="programa">Programação</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Oficinas</legend>
+                    <p>Selecione uma ou mais oficinas:</p>
+
+                    <input type="checkbox" id="oficina-html" name="oficinas" value="html">
+                    <label for="oficina-html">HTML na prática</label><br>
+
+                    <input type="checkbox" id="oficina-bd" name="oficinas" value="banco-dados">
+                    <label for="oficina-bd">Banco de Dados</label><br>
+
+                    <input type="checkbox" id="oficina-ia" name="oficinas" value="ia">
+                    <label for="oficina-ia">Introdução à Inteligência Artificial</label><br>
+
+                    <input type="checkbox" id="oficina-seguranca" name="oficinas" value="seguranca">
+                    <label for="oficina-seguranca">Segurança na Web</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Palestra principal</legend>
+                    <p>Escolha apenas uma:</p>
+
+                    <input type="radio" id="palestra-ia" name="palestra" value="ia" required>
+                    <label for="palestra-ia">Futuro da Inteligência Artificial</label><br>
+
+                    <input type="radio" id="palestra-web" name="palestra" value="web">
+                    <label for="palestra-web">Desenvolvimento Web em 2026</label><br>
+
+                    <input type="radio" id="palestra-dados" name="palestra" value="dados">
+                    <label for="palestra-dados">Dados e decisões inteligentes</label><br>
+
+                    <input type="radio" id="palestra-carreira" name="palestra" value="carreira">
+                    <label for="palestra-carreira">Carreiras em Tecnologia</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Experiência em programação</legend>
+
+                    <p>Nível de experiência:</p>
+
+                    <input type="radio" id="nenhuma" name="nivel" value="nenhuma" required>
+                    <label for="nenhuma">Nenhuma experiência</label><br>
+
+                    <input type="radio" id="iniciante" name="nivel" value="iniciante">
+                    <label for="iniciante">Iniciante</label><br>
+
+                    <input type="radio" id="intermediario" name="nivel" value="intermediario">
+                    <label for="intermediario">Intermediário</label><br>
+
+                    <input type="radio" id="avancado" name="nivel" value="avancado">
+                    <label for="avancado">Avançado</label>
+
+                    <p>
+                        <label for="tempo">Há quanto tempo você programa?</label><br>
+                        <input type="range" id="tempo" name="tempo" min="0" max="10" value="0"> 
+                        <br>
+                        <small>0 = menos de 1 ano | 10 = mais de 10 anos</small>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sistema operacional</legend>
+
+                    <label for="sistema">Qual sistema operacional você utiliza?</label><br>
+                    <select id="sistema" name="sistema" required>
+                        <option value="">Selecione</option>
+                        <option value="windows">Windows</option>
+                        <option value="linux">Linux</option>
+                        <option value="macos">macOS</option>
+                        <option value="android">Android</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Origem da divulgação</legend>
+
+                    <label for="origem">Como você conheceu o Tech Challenge?</label><br>
+                    <select id="origem" name="origem" required>
+                        <option value="">Selecione</option>
+                        <option value="redes">Redes sociais</option>
+                        <option value="faculdade">Faculdade ou escola</option>
+                        <option value="amigos">Amigos</option>
+                        <option value="site">Site de tecnologia</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações adicionais</legend>
+
+                    <label for="motivo">
+                        Por que você deseja participar do Tech Challenge?
+                    </label><br>
+                    <textarea id="motivo" name="motivo" rows="7" cols="60"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Termos e autorizações</legend>
+
+                    <p>
+                        <input type="checkbox" id="regras" name="regras" required>
+                        <label for="regras">
+                            Li e concordo com as regras do evento.
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="imagem" name="imagem" required>
+                        <label for="imagem">
+                            Autorizo o uso da minha imagem durante o evento.
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="futuros" name="futuros">
+                        <label for="futuros">
+                            Desejo receber informações sobre futuros eventos.
+                        </label>
+                    </p>
+
+                    <p>
+                        Consulte o <a href="">Termo de Participação</a> antes de enviar.
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar inscrição</button>
+                    <button type="reset">Limpar dados</button>
+                </p>
+
+            </form>
+    <footer>
+        <hr>
+        <p>&copy; 2026 Tech Challenge &mdash; Projeto acadêmico fictício.</p>
+    </footer>
+</body>
+</html>
