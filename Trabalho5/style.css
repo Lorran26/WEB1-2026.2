@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#d {
+    margin: 0;
+    color: black;
+}
+
+h1, p{
+    color: red;
+    margin: 20px;
+}
+
+a:hover{
+    background-color: yellow;
+}
+
+#bloco1{
+box-sizing: content-box;
+border: 5px solid black;
+width: 200px;
+padding: 20px;
+margin: 10px 20px 30px 40px;
+}
+
+#bloco2 {
+    border: 5px solid black;
+    width: 200px;
+    padding: 20px;
+}
+
+#bloco2:hover{
+    background-color: yellow;
+}
+
+#bloco3{
+    border: 2px solid black;
+    padding: 30px;
+    width: 200px;
+    margin: 10px 20px 30px 40px;
+}
+
+span{
+    border: 2px solid black;
+    display: block;
+    width: 60px;
+    height: 50px;
+}
+
+#elemento{
+    border: 2px solid black;
+    padding: 20px;
+    width: 20px;
+    float: left;
+}
+
+#alternativaa{
+    border: 2px solid black;
+    width: 400px;
+}
+
+#alternativab{
+    border: 2px solid black;
+    width: 400px;
+}
+
+#alternativac{
+    border: 2px solid black;
+    width: 400px;
+}
+
+#alternativad{
+    border: 2px solid black;
+    width: 400px;
+    height: 100px;
+}
+
+#alternativae{
+    border: 2px solid black;
+    width: 404px;
+}
+#imagem{
+    border: 2px solid black;
+    width: 400px;
+    padding: 140px;
+    background-image: url(imagem.jpg);
+}
+
+#alternativaf{
+    border: 2px solid black;
+    width: 400px;
+    padding: 20px;
+}
+
+#alternativag{
+    border: 2px solid black;
+    width: 400px;
+}
+
+#alternativah{
+    border: 2px solid black;
+    width: 400px;
+}
+
